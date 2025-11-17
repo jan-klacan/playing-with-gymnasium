@@ -1,4 +1,5 @@
 import gymnasium as gym
+import time
 
 env = gym.make("CartPole-v1", render_mode="human") # create a training env with the cartpole problem, set render mode to show a visual window
 
@@ -23,6 +24,8 @@ while not episode_over:
     
     total_reward += reward
     episode_over = terminated or truncated
+
+    time.sleep(0.7) # slow down the simulation
 
 print(f"Episode finished. Total reward: {total_reward}")
 env.close()
