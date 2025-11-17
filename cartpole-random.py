@@ -25,7 +25,7 @@ while not episode_over:
     total_reward += reward
     episode_over = terminated or truncated
 
-    time.sleep(0.7) # slow down the simulation
+    time.sleep(0.4) # slow down the simulation
 
 print(f"Episode finished. Total reward: {total_reward}")
 env.close()
