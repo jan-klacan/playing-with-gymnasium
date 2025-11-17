@@ -1,6 +1,6 @@
 import gymnasium as gym
 
-env = gym.make("Cartpole-v1", render_mode="human") # create a training env with the cartpole problem, set render mode to show a visual window
+env = gym.make("CartPole-v1", render_mode="human") # create a training env with the cartpole problem, set render mode to show a visual window
 
 observation, info = env.reset() # reset env to start a new episode - will get us the first observation along with additional info
 
